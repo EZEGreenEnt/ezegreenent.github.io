@@ -43,6 +43,28 @@ nav a {
   text-decoration: none;
 }
 
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.social-links a {
+  margin-right: 1em;
+}
+
+.social-links img {
+  width: 24px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.social-links img:hover {
+  filter: grayscale(0%);
+}
+
 main {
   display: flex;
   flex-direction: column;
