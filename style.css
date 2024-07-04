@@ -13,8 +13,8 @@
 /* Global Styles */
 
 :root {
-  --primary-color: #003300;
-  --secondary-color: #000;
+  --primary-color: #505e50;
+  --secondary-color: #a44343;
   --background-color: #ffffff;
   --spacing: 16px;
   --font-family: Arial, sans-serif;
@@ -87,7 +87,7 @@ nav a {
 
 .social-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: var(--spacing);
 }
@@ -115,7 +115,7 @@ main {
 }
 
 section {
-  background: var(--primary-color);
+  background: var(--background-color);
   padding: var(--spacing);
   margin-bottom: var(--spacing);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
