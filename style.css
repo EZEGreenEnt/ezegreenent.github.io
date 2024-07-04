@@ -22,6 +22,23 @@
   --line-height: 1.6;
 }
 
+
+/* Hide the navigation menu by default */
+nav ul {
+  display: none;
+}
+
+/* Show the navigation menu when the class 'show' is added */
+nav ul.show {
+  display: block;
+}
+
+/* Style the hamburger icon (you can customize this further) */
+.hamburger-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
 body {
   font-family: var(--font-family);
   font-size: var(--font-size);
