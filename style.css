@@ -51,7 +51,7 @@ body {
 
 header {
   background: var(--background-color);
-  color: var(--secondary-color);
+  color: var(--primary-color);
   padding: var(--spacing);
   text-align: center;
 }
@@ -81,7 +81,7 @@ nav li {
 }
 
 nav a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -99,12 +99,12 @@ nav a {
 .social-links img {
   width: 24px;
   height: auto;
-  filter: grayscale(100%);
+  filter: grayscale(0%);
   transition: filter 0.3s ease;
 }
 
 .social-links img:hover {
-  filter: grayscale(0%);
+  filter: grayscale(50%);
 }
 
 main {
@@ -115,7 +115,7 @@ main {
 }
 
 section {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   padding: var(--spacing);
   margin-bottom: var(--spacing);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
