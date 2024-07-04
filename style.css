@@ -1,17 +1,3 @@
-/*Changes made:
-
-- Defined global variables using CSS custom properties (:root)
-- Improved color scheme consistency
-- Added font size and line height definitions
-- Standardized spacing using a variable (--spacing)
-- Simplified selectors and properties
-- Removed duplicated properties
-- Added vendor prefixes for better cross-browser compatibility
-- Improved code organization */
-
-
-/* Global Styles */
-
 :root {
   --primary-color: #505e50;
   --secondary-color: #a44343;
@@ -20,23 +6,6 @@
   --font-family: Arial, sans-serif;
   --font-size: 16px;
   --line-height: 1.6;
-}
-
-
-/* Hide the navigation menu by default */
-nav ul {
-  display: none;
-}
-
-/* Show the navigation menu when the class 'show' is added */
-nav ul.show {
-  display: block;
-}
-
-/* Style the hamburger icon (you can customize this further) */
-.hamburger-icon {
-  font-size: 24px;
-  cursor: pointer;
 }
 
 body {
@@ -132,15 +101,11 @@ ul {
   padding: 0;
 }
 
-li {
-  margin-bottom: var(--spacing);
-}
-
 a {
   text-decoration: none;
   color: var(--primary-color);
 }
 
 a:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
