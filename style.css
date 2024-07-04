@@ -134,6 +134,7 @@ main {
 }
 
 section {
+  display: none; /* Hide all sections initially */
   background: var(--background-color);
   padding: var(--spacing);
   margin-bottom: var(--spacing);
