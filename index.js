@@ -32,13 +32,12 @@ window.onload = function() {
         // Hide all sections
         sections.forEach(sec => {
           sec.style.display = 'none';
+          sec.style.paddingTop = '0'; // Reset padding on all sections
         });
 
         // Show the clicked section
         section.style.display = 'block';
-
-        // Add padding to the top of the section to account for fixed header
-        section.style.paddingTop = headerHeight + 'px';
+        section.style.paddingTop = headerHeight + 'px'; // Add padding for fixed header
       }
     });
   });
@@ -59,7 +58,7 @@ window.onload = function() {
 
       // Show the clicked section
       section.style.display = 'block';
-      section.style.paddingTop = headerHeight + 'px';
+      section.style.paddingTop = headerHeight + 'px'; // Add padding for fixed header
     }
   }
 };
