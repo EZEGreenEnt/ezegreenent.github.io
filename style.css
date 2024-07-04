@@ -35,12 +35,16 @@ header img {
   width: 100px;
   height: auto;
   margin: 0 0 var(--spacing);
+  position: relative; /* Ensure logo respects its own space */
+  z-index: 1; /* Ensure logo is above other content */
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative; /* Ensure nav respects its own space */
+  z-index: 2; /* Ensure nav is above other content */
 }
 
 nav ul {
@@ -83,6 +87,7 @@ nav a:hover {
     background-color: var(--background-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: none;
+    z-index: 3; /* Ensure nav is above logo */
   }
 
   nav ul.show {
@@ -97,6 +102,8 @@ nav a:hover {
 
   .hamburger-icon {
     display: block;
+    position: relative; /* Ensure hamburger respects its own space */
+    z-index: 4; /* Ensure hamburger is above other content */
   }
 }
 
