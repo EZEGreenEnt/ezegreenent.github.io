@@ -1,12 +1,14 @@
 window.onload = function() {
   const hamburgerIcon = document.querySelector('.hamburger-icon');
   const navMenu = document.querySelector('nav ul');
+  const sections = document.querySelectorAll('main section');
 
+  // Toggle the navigation menu when the hamburger icon is clicked
   hamburgerIcon.addEventListener('click', () => {
     navMenu.classList.toggle('show');
   });
 
-  // Smooth scrolling to sections
+  // Smooth scrolling to sections when menu items are clicked
   document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
@@ -26,6 +28,14 @@ window.onload = function() {
 
         // Close the menu if it's open (for mobile view)
         navMenu.classList.remove('show');
+
+        // Hide all sections
+        sections.forEach(sec => {
+          sec.style.display = 'none';
+        });
+
+        // Show the clicked section
+        section.style.display = 'block';
       }
     });
   });
