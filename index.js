@@ -19,7 +19,7 @@ window.onload = function() {
       if (section) {
         // Calculate offset considering fixed header height
         const headerHeight = document.querySelector('header').offsetHeight;
-        const offsetTop = section.offsetTop - headerHeight + 10; // Adjusted by +1 to ensure it scrolls correctly
+        const offsetTop = section.offsetTop - headerHeight + 10; // Adjusted initial scroll
 
         window.scrollTo({
           top: offsetTop,
@@ -48,8 +48,9 @@ window.onload = function() {
     const section = document.getElementById(hash);
 
     if (section) {
+      // Calculate offset considering fixed header height
       const headerHeight = document.querySelector('header').offsetHeight;
-      const offsetTop = section.offsetTop - headerHeight + 10;
+      const offsetTop = section.offsetTop - headerHeight + 10; // Adjusted initial scroll
 
       window.scrollTo({
         top: offsetTop,
