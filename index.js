@@ -19,7 +19,7 @@ window.onload = function() {
       if (section) {
         // Calculate offset considering fixed header height
         const headerHeight = document.querySelector('header').offsetHeight;
-        const offsetTop = section.offsetTop - headerHeight;
+        const offsetTop = section.offsetTop - headerHeight + 1; // Adjusted by +1 to ensure it scrolls correctly
 
         window.scrollTo({
           top: offsetTop,
@@ -36,7 +36,30 @@ window.onload = function() {
 
         // Show the clicked section
         section.style.display = 'block';
+
+        // Add padding to the top of the section to account for fixed header
+        section.style.paddingTop = headerHeight + 'px';
       }
     });
   });
+
+  // Adjust scroll position on page load if there's a hash in URL
+  if (window.location.hash) {
+    const hash = window.location.hash.substring(1);
+    const section = document.getElementById(hash);
+
+    if (section) {
+      const headerHeight = document.querySelector('header').offsetHeight;
+      const offsetTop = section.offsetTop - headerHeight + 1;
+
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+
+      // Show the clicked section
+      section.style.display = 'block';
+      section.style.paddingTop = headerHeight + 'px';
+    }
+  }
 };
