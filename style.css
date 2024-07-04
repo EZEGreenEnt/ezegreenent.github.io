@@ -19,6 +19,7 @@ body {
   padding: 0;
 }
 
+/*    
 header {
   background: var(--background-color);
   color: var(--primary-color);
@@ -27,17 +28,37 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1000; /* Ensure header stays on top */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  z-index: 1000; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 header img {
   width: 100px;
   height: auto;
   margin: 0 0 var(--spacing);
-  position: relative; /* Ensure logo respects its own space */
-  z-index: 1; /* Ensure logo is above other content */
+  position: relative; 
+  z-index: 1; 
 }
+*/
+/* Header styles */
+
+header {
+  background-color: #ffffff; /* Adjust background color if needed */
+  color: #505e50; /* Adjust text color if needed */
+  padding: 10px 20px; /* Adjust padding as per your design */
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000; /* Ensure header stays on top */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+header img {
+  max-width: 80px; /* Adjust maximum width of the logo */
+  height: auto;
+  margin: 0; /* Remove margin if not needed */
+}
+
 
 nav {
   display: flex;
