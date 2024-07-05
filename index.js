@@ -50,7 +50,7 @@ window.onload = function() {
     if (section) {
       // Calculate offset considering fixed header height
       const headerHeight = document.querySelector('header').offsetHeight;
-      const offsetTop = section.offsetTop - headerHeight + 10; // Adjusted initial scroll
+      const offsetTop = section.offsetTop - headerHeight + 40; // Adjusted initial scroll
 
       window.scrollTo({
         top: offsetTop,
