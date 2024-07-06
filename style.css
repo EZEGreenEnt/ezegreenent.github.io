@@ -19,27 +19,6 @@ body {
   padding: 0;
 }
 
-/*    
-header {
-  background: var(--background-color);
-  color: var(--primary-color);
-  padding: var(--spacing);
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-}
-
-header img {
-  width: 100px;
-  height: auto;
-  margin: 0 0 var(--spacing);
-  position: relative; 
-  z-index: 1; 
-}
-*/
 /* Header styles */
 
 header {
@@ -142,14 +121,10 @@ main {
 section {
   display: none; /* Hide all sections initially */
   background: var(--background-color);
+  padding-top: var(--spacing);
   padding: var(--spacing);
   margin-bottom: var(--spacing);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-element.style {
-    display: block;
-    padding-top: var(--spacing);
 }
 
 h2 {
