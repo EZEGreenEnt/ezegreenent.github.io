@@ -107,16 +107,16 @@ nav a:hover {
   }
 }
 
-.main-content {
-  padding-top: 50px; /* Adjust based on header height for content to start below */
-}
-
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: var(--spacing);
-  margin-top: 60px;
+  margin-top: var(--spacing);
+}
+
+h3 {
+    padding-top: 140px
 }
 
 .section-content {
