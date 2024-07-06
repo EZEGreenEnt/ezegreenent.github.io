@@ -118,6 +118,9 @@ main {
   padding: var(--spacing);
 }
 
+.section-content {
+  padding-top: var(--spacing);
+}
 section {
   display: none; /* Hide all sections initially */
   background: var(--background-color);
