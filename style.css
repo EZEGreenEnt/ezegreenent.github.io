@@ -135,7 +135,7 @@ section {
             background-color: var(--background-color);
             border: none;
             border-radius: 15px;
-            color: #87F27A;
+            color: #138A05;
             padding: 15px 32px;
             text-align: center;
             text-decoration: none;
@@ -155,7 +155,7 @@ section {
             transform: translateY(-50%);
         }
         .button:hover {
-            background-color: #1FBA63;
+            background-color: #86EA2F;
         }
           
 h2 {
