@@ -132,7 +132,7 @@ section {
 }
 
 .button {
-            background-color: var(--background-color);
+            background-color: var(--primary-color);
             border: none;
             color: var(--secondary-color);
             padding: 15px 32px;
