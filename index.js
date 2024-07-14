@@ -20,10 +20,7 @@ window.onload = function() {
         // Calculate offset considering fixed header height
         const headerHeight = document.querySelector('header').offsetHeight;
         const offsetTop = section.offsetTop - headerHeight + 'px'; // Adjusted initial scroll
-
-        console.log('Section ID:', sectionId); // Debug: Log the section ID
-        console.log('Offset Top:', offsetTop); // Debug: Log the calculated offset
-
+        debugger;
         window.scrollTo({
           top: offsetTop,
           behavior: 'smooth'
