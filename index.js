@@ -18,7 +18,7 @@ window.onload = function() {
 
       if (section) {
         // Calculate offset considering fixed header height
-        const headerHeight = document.querySelector('header').offsetHeight;
+        const headerHeight = document.querySelector('header').offsetTop;
         const offsetTop = section.offsetTop - headerHeight + 'px'; // Adjusted initial scroll
         debugger;
         window.scrollTo({
@@ -49,7 +49,7 @@ window.onload = function() {
 
     if (section) {
       // Calculate offset considering fixed header height
-      const headerHeight = document.querySelector('header').offsetHeight;
+      const headerHeight = document.querySelector('header').offsetTop;
       const offsetTop = section.offsetTop - headerHeight + 'px'; // Adjusted initial scroll
 
       console.log('Hash:', hash); // Debug: Log the hash value
