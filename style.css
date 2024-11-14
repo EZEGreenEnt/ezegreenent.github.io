@@ -182,9 +182,9 @@ a:hover {
 
 footer {
   background-color: #505e50; /* Adjust background color */
-  padding: 20px 0;
+  padding: 5px 0;
   text-align: center;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
   z-index: 1000; /* Ensure footer stays on top of content */
