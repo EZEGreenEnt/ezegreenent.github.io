@@ -1,24 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Eze Green Enterprises</title>
-  <link rel="icon" type="image/x-icon" href="logo.jpg">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="logo.jpg" type="image/x-icon" />
   <style>
-    /* Smooth scroll effect */
     html {
       scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header img {
+      height: 50px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav li {
+      margin: 0 15px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: green;
+    }
+    .main-content {
+      flex: 1;
+      padding: 20px;
+    }
+    section {
+      margin: 40px 0;
+    }
+    section h2 {
+      color: #2e5c2d;
+    }
+    .footer-content {
+      background: #4a5f4d;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    .social-links a {
+      display: inline-block;
+      margin: 0 5px;
+    }
+    .social-links img {
+      width: 30px;
+      height: 30px;
+    }
+    .button {
+      background: #2e5c2d;
+      color: #fff;
+      padding: 8px 16px;
+      margin: 5px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .button:hover {
+      background: #1e3e1d;
     }
   </style>
 </head>
 <body>
+
   <header>
     <img src="logo.jpg" alt="Eze Greens Enterprises Logo">
     <nav>
-      <div class="hamburger-icon">☰</div>
       <ul>
         <li><a href="#about">About Us</a></li>
         <li><a href="#contact">Contact Us</a></li>
@@ -41,70 +109,44 @@
       <ul>
         <li><a href="mailto:ezegreenenterprises@gmail.com">ezegreenenterprises@gmail.com</a></li>
         <li><a href="tel:+917018955343">+91 70189 55343</a></li>
-        <li>Address: Eze Green Enterprises, VPO Majra (Nayagaon), Tehsil Paonta Sahib, Sirmour (H.P.) 173025</li>
+        <li>Address: VPO Majra (Nayagaon), Tehsil Paonta Sahib, Sirmour (H.P.) 173025</li>
       </ul>
     </section>
 
     <section id="certifications">
       <h2>Certifications</h2>
       <p>Click to view our certifications:</p>
-      <ul>
-        <li>
-          <a href="https://hpocmms.nic.in/applicationProcessingDetails/openCerificate/11340014" target="_blank">
-            <button class="button">HPSPCB Consent Letter</button>
-          </a>
-        </li>
-        <li>
-          <a href="https://ezegreenent.github.io/auth-cert.pdf" target="_blank">
-            <button class="button">Authorization Certificate</button>
-          </a>
-        </li>
-        <li>
-          <a href="https://ezegreenent.github.io/manu-cert.pdf" target="_blank">
-            <button class="button">Manufacturing Certificate</button>
-          </a>
-        </li>
-      </ul>
+      <a href="https://hpocmms.nic.in/applicationProcessingDetails/openCerificate/11340014" target="_blank">
+        <button class="button">HPSPCB Consent Letter</button>
+      </a>
+      <a href="https://ezegreenent.github.io/auth-cert.pdf" target="_blank">
+        <button class="button">Authorization Certificate</button>
+      </a>
+      <a href="https://ezegreenent.github.io/manu-cert.pdf" target="_blank">
+        <button class="button">Manufacturing Certificate</button>
+      </a>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-content">
-      <div class="social-links">
-        <a href="https://facebook.com/" target="_blank">
-          <img src="square-facebook.svg" alt="Facebook Logo">
-        </a>
-        <a href="https://x.com/" target="_blank">
-          <img src="square-x-twitter.svg" alt="Twitter Logo">
-        </a>
-        <a href="https://web.whatsapp.com/" target="_blank">
-          <img src="square-whatsapp.svg" alt="WhatsApp Logo">
-        </a>
-        <a href="https://instagram.com/" target="_blank">
-          <img src="square-instagram.svg" alt="Instagram Logo">
-        </a>
-      </div>
-
-      <div class="copyright">
-        &copy; 2024 Eze Green Enterprises. All Rights Reserved.
-      </div>
-
-      <div>
-        <p>
-          <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
-            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
-          </a>
-          <a href="https://swachhbharatmission.ddws.gov.in/" target="_blank">
-            <img style="border:0;width:88px;height:31px" src="swachh-bharat-logo.jpg" alt="Swachh Bharat Mission" />
-          </a>
-          <a href="https://www.makeinindia.com/home/" target="_blank">
-            <img style="border:0;width:88px;height:31px" src="make-in-india.jpg" alt="Make In India" />
-          </a>
-        </p>
-      </div>
+  <footer class="footer-content">
+    <div class="social-links">
+      <a href="https://facebook.com/" target="_blank">
+        <img src="square-facebook.svg" alt="Facebook Logo">
+      </a>
+      <a href="https://x.com/" target="_blank">
+        <img src="square-x-twitter.svg" alt="Twitter Logo">
+      </a>
+      <a href="https://web.whatsapp.com/" target="_blank">
+        <img src="square-whatsapp.svg" alt="WhatsApp Logo">
+      </a>
+      <a href="https://instagram.com/" target="_blank">
+        <img src="square-instagram.svg" alt="Instagram Logo">
+      </a>
+    </div>
+    <div class="copyright">
+      &copy; 2024 Eze Green Enterprises. All Rights Reserved.
     </div>
   </footer>
 
-  <script src="index.js"></script>
 </body>
 </html>
