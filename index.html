@@ -6,153 +6,38 @@
   <title>Eze Green Enterprises</title>
   <link rel="icon" href="logo.jpg" type="image/x-icon" />
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: #fff;
-      padding: 10px 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    header img {
-      height: 50px;
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-    nav li {
-      margin: 0 15px;
-    }
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: green;
-    }
-    .main-content {
-      flex: 1;
-      padding: 20px;
-    }
-    section {
-      margin: 40px 0;
-    }
-    section h2 {
-      color: #2e5c2d;
-    }
-    .footer-content {
-      background: #4a5f4d;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    .social-links a {
-      display: inline-block;
-      margin: 0 5px;
-    }
-    .social-links img {
-      width: 30px;
-      height: 30px;
-    }
-    .button {
-      background: #2e5c2d;
-      color: #fff;
-      padding: 8px 16px;
-      margin: 5px;
-      border: none;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-    .button:hover {
-      background: #1e3e1d;
-    }
+    html { scroll-behavior: smooth; }
+    body { margin:0; font-family: Arial, sans-serif; color:#333; }
+    header, footer { background:#4a5f4d; color:#fff; text-align:center; padding:15px; }
+    nav ul { list-style:none; padding:0; margin:0; display:flex; justify-content:center; }
+    nav li { margin: 0 15px; }
+    nav a { color:#fff; text-decoration:none; font-weight:bold; }
+    nav a:hover { text-decoration:underline; }
+    .main-content { padding: 40px 20px; max-width: 900px; margin:auto; }
+    section { margin-bottom:50px; }
+    h1, h2 { color:#2e5c2d; }
+    .button { background:#2e5c2d; color:#fff; padding:10px 20px; border:none; cursor:pointer; margin:5px; border-radius:4px; }
+    .button:hover { background:#1e3e1d; }
+    .social-links img { width:30px; margin: 0 5px; }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.jpg" alt="Eze Greens Enterprises Logo">
+    <h1>Eze Green Enterprises</h1>
     <nav>
       <ul>
         <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#products">Our Products</a></li>
+        <li><a href="#join">Join Us</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main-content">
-    <h3>A registered bio-degradable carry bag manufacturing industry. Registration ID: HP10439550</h3>
 
     <section id="about">
       <h2>About Us</h2>
-      <p>Welcome to Eze Green Enterprises! We provide eco-friendly alternatives to single-use plastic. Support us to make this planet greener and safer. We mainly deal in eco-friendly plastic free shopping bags, garbage bags etc. At Eze Green Enterprises, we believe in a cleaner, greener future for everyone. Established with a vision to reduce plastic pollution, we specialize in producing high-quality, bio-degradable carry bags and eco-friendly packaging solutions. Our commitment to sustainability drives us to provide alternatives that are both practical and environmentally responsible.
-
-Registered under ID: HP10439550, our manufacturing unit is located in the beautiful state of Himachal Pradesh. We focus on creating durable, plastic-free shopping bags, garbage bags, and other packaging products designed to replace harmful single-use plastics. Each product is crafted to help individuals and businesses make the shift towards a sustainable lifestyle without compromising on quality or convenience.
-
-At the heart of our work is a mission to support national initiatives like the Swachh Bharat Abhiyan and Make in India by offering products proudly manufactured in India. We also place great value on ethical practices, innovation, and customer satisfaction.
-
-Whether you’re a local shop, large retailer, or an individual who cares about the environment, Eze Green Enterprises is here to partner with you on your eco-journey. Together, we can protect our planet and inspire future generations to live green..</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>We would love to hear from you!</p>
-      <ul>
-        <li><a href="mailto:ezegreenenterprises@gmail.com">ezegreenenterprises@gmail.com</a></li>
-        <li><a href="tel:+917018955343">+91 70189 55343</a></li>
-        <li>Address: VPO Majra (Nayagaon), Tehsil Paonta Sahib, Sirmour (H.P.) 173025</li>
-      </ul>
-    </section>
-
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <p>Click to view our certifications:</p>
-      <a href="https://hpocmms.nic.in/applicationProcessingDetails/openCerificate/11340014" target="_blank">
-        <button class="button">HPSPCB Consent Letter</button>
-      </a>
-      <a href="https://ezegreenent.github.io/auth-cert.pdf" target="_blank">
-        <button class="button">Authorization Certificate</button>
-      </a>
-      <a href="https://ezegreenent.github.io/manu-cert.pdf" target="_blank">
-        <button class="button">Manufacturing Certificate</button>
-      </a>
-    </section>
-  </main>
-
-  <footer class="footer-content">
-    <div class="social-links">
-      <a href="https://facebook.com/" target="_blank">
-        <img src="square-facebook.svg" alt="Facebook Logo">
-      </a>
-      <a href="https://x.com/" target="_blank">
-        <img src="square-x-twitter.svg" alt="Twitter Logo">
-      </a>
-      <a href="https://web.whatsapp.com/" target="_blank">
-        <img src="square-whatsapp.svg" alt="WhatsApp Logo">
-      </a>
-      <a href="https://instagram.com/" target="_blank">
-        <img src="square-instagram.svg" alt="Instagram Logo">
-      </a>
-    </div>
-    <div class="copyright">
-      &copy; 2024 Eze Green Enterprises. All Rights Reserved.
-    </div>
-  </footer>
-
-</body>
-</html>
+      <p>At <strong>Eze Green Enterprises</strong>, we are passionate about creating a cleaner, greener world. Based in Himachal Pradesh and proudly registered under ID: HP10439550, we specialize in manufacturing bio-degradable carry bags and plastic-free packaging solutions. Our mission is simple: to reduce plastic waste by offering sustainable alternatives that protect the environment while supporting modern lifestyles.</p>
+      <p>Founded by a team that believes every small step counts, Eze Green Enterprises has grown from an idea into a trusted brand. We aim to inspire individuals, businesses, and communities to choose eco-friendly options without compromising on quality or convenience. Our commitment aligns with national movements like <strong>Swachh Bharat Abhiyan</strong> and <strong>Make in India</strong>, ensuring our products contribute to both a greener environment and a stronger local economy.</p>
+      <p>At the heart of our company lies innovation, responsibility, and an unwavering focus on quality. Together, we believe we can shape a
